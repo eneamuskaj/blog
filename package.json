@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-ghpages": "npx @11ty/eleventy --pathprefix=/your-repo-name/",
+    "build-ghpages": "npx @11ty/eleventy --pathprefix=/blog/",
     "dev": "eleventy --serve",
     "build": "eleventy",
     "watch": "eleventy --watch"
