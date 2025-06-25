@@ -1,0 +1,16 @@
+html, body {
+  overflow: hidden;
+}
+
+body{
+  padding-left: 10%;
+  padding-right: 10%;
+  font-family: arial;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -3,6 +3,9 @@ module.exports = function (eleventyConfig) {
     return collection.getFilteredByGlob("src/posts/*.md").reverse();
   });
 
+  // Passthrough copy for assets
+  eleventyConfig.addPassthroughCopy("src/assets");
+
   return {
     dir: {
       input: "src",

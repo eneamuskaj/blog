@@ -5,4 +5,4 @@ title: About
 
 # About
 
-This is the about page.
+I'm a self-taught Software Engineer. When I'm not coding, I am making music, watches, taking photos or riding my motorcycle.

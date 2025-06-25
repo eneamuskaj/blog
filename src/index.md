@@ -3,6 +3,6 @@ layout: layout.njk
 title: Welcome
 ---
 
-# Hello, World
+# Welcome
 
-This is my 11ty site.
+This is my blog site.
