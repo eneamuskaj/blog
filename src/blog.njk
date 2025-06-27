@@ -3,12 +3,13 @@ title: Blog
 layout: layout.njk
 ---
 
-<h2>Blog Posts</h2>
+<h1>Blog Posts</h1>
 
 <ul>
   {% for post in collections.posts %}
     <li>
       <a href="{{ post.url }}">{{ post.data.title }}</a>
+      <p>{{ post.date | readableDate }}</p>
     </li>
   {% endfor %}
 </ul>

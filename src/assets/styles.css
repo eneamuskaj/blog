@@ -3,14 +3,87 @@ html, body {
 }
 
 body{
-  padding-left: 10%;
-  padding-right: 10%;
+  margin: 0;
+  padding: 0;
   font-family: arial;
   box-sizing: border-box;
+}
+
+main {
+    padding-left: 10%;
+  padding-right: 10%;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #c9c9c9;
+  padding: 0px 10px 0px 10px;
+}
+
+#navigation {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+button {
+  background: #444b5a;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+/* Simple dark mode styles (not fully black) */
+body.dark-mode {
+  background-color: #23272f;
+  color: #e0e0e0;
+}
+body.dark-mode header,
+body.dark-mode footer {
+  background-color: #2d313a;
+}
+body.dark-mode a {
+  color: #b3d4fc;
+}
+body.dark-mode button {
+  background: #ffffff;
+  color: #e0e0e0;
+  border: 1px solid #888;
+}
+
+a {
+  color: #17406d;
+  text-decoration: none;
+  padding: 2px 6px;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+}
+a:hover, a:focus {
+  background: #cce0fa;
+  color: #10243a;
+  outline: none;
+}
+
+body.dark-mode a:hover, body.dark-mode a:focus {
+  background: #17406d;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+ul li::before {
+  content: "- ";
+  color: #888;
+  font-weight: bold;
+  margin-right: 4px;
 }
