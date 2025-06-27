@@ -9,18 +9,38 @@
 <body>
   <header>
     <h1>Enea Muskaj Blog</h1>
+    <div id="navigation">
+        <button id="darkModeToggle">🌗</button>
     <nav><a href="/">Home</a> | <a href="/blog/">Blog</a> | <a href="/about">About</a></nav>
+    </div>
   </header>
   <main>
-    <h2>Blog Posts</h2>
+    
+<h1>Blog Posts</h1>
+
 <ul>
-<p><li>
-<a href="/posts/first-post/">My First Post</a>
-</li></p>
+  
+    <li>
+      <a href="/posts/first-post/">My First Post</a>
+      <p>June 24, 2025</p>
+    </li>
+  
 </ul>
 
   </main>
   <footer>
   </footer>
+  <script>
+    localStorage.setItem('darkMode', 'true'); // Set default dark mode state
+    const toggleBtn = document.getElementById('darkModeToggle');
+    const body = document.body;
+    if (localStorage.getItem('darkMode') === 'true') {
+      body.classList.add('dark-mode');
+    }
+    toggleBtn.addEventListener('click', () => {
+      body.classList.toggle('dark-mode');
+      localStorage.setItem('darkMode', body.classList.contains('dark-mode'));
+    });
+  </script>
 </body>
 </html>
